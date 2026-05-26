@@ -3,7 +3,7 @@
 //
 
 
-#include "Node.h"
+#include "include/Node.h"
 
 
 Node::Node(char data, int freq) {

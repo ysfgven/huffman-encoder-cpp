@@ -53,6 +53,7 @@ void PriorityQueue::insert(Node *node) {
 }
 
 Node* PriorityQueue::extractMin() {
+    if (heap.empty()) return nullptr;
     Node* minNode = heap[0];
     std::swap(heap[0], heap[heap.size() - 1]);
     heap.pop_back();
@@ -60,11 +61,11 @@ Node* PriorityQueue::extractMin() {
     return minNode;
 }
 
-int PriorityQueue::size() {
+int PriorityQueue::size() const {
     return heap.size();
 }
 
-bool PriorityQueue::isEmpty() {
-    return heap.size() == 0;
+bool PriorityQueue::isEmpty() const{
+    return heap.empty();
 
 }

@@ -20,8 +20,8 @@ class PriorityQueue {
     ~PriorityQueue();
     void insert(Node* node);
     Node* extractMin();
-    int size();
-    bool isEmpty();
+    int size() const;
+    bool isEmpty() const;
 };
 
 

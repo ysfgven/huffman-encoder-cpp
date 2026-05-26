@@ -24,7 +24,7 @@ int main() {
     }
 
     PriorityQueue pq;
-    for (auto pair : freqMap) {
+    for (const auto& pair : freqMap){
         pq.insert(new Node(pair.first, pair.second));
     }
 
